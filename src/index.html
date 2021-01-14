@@ -12,9 +12,15 @@
     </div>
     <div id="root">
       <p>¿Que quieres codificar?</p>
-      <textarea name="texto" rows="10" cols="60">Escribe aquí tu texto</textarea>
+      <!--boton codificar-->
+      
+      <textarea name="texto" placeholder="texto para codificar" rows="10" cols="60"></textarea>
+      <button onclick="myFunction()">Cifrar</button>
       <p>Desplazamiento  </p>
-      <input type="number" id="offset" value="3" name="offset" />
+      <input type="number" id="offset" value="3" name="offset"/>
+      <!--resultado codificado-->
+      <p>Texto Cifrado</p>
+      <p id="coded"></p>
 
 
 
