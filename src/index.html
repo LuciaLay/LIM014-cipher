@@ -10,7 +10,8 @@
       <p>Ceasar Cipher</p>
       <p>Protege tus palabras</p>
     </div>
-    <div id="codUncode">
+ <div id="wrapper">
+    <div id="code">
       <p>¿Que quieres cifrar?</p>
       <!--boton cifrar-->
       <textarea name="texto" placeholder="texto para cifrar" rows="10" cols="60"></textarea>
@@ -20,7 +21,9 @@
       <!--resultado cifrado-->
       <p>Texto Cifrado</p>
       <p id="coded"></p>
+    </div>
 
+    <div id="uncode">
       <p>¿Que quieres descifrar?</p>
       <!--boton descifrar-->
       <textarea name="texto" placeholder="texto para descifrar" rows="10" cols="60"></textarea>
@@ -30,14 +33,29 @@
       <!--resultado descifrado-->
       <p>Texto Descifrado</p>
       <p id="uncoded"></p>
-
-
+    </div>
+  </div>
+   
+    
+    <div id="info">
+      <h1>¿Que es el Cifrado Cesar?</h1>
+      <p>
+        En criptografía, el cifrado César, también conocido como cifrado por desplazamiento, código de César o 
+       desplazamiento de César, es una de las técnicas de cifrado más simples y más usadas. Es un tipo de cifrado
+       por sustitución en el que una letra en el texto original es reemplazada por otra letra que se encuentra un
+       número fijo de posiciones más adelante en el alfabeto.
+      </p>
+      <img width="500px"  src="img/cesar.png">
+      <p>
+        Por ejemplo, con un desplazamiento de 3, la A sería sustituida por la D (situada 3 lugares a la derecha de la 
+        A), la B sería reemplazada por la E, etc. Este método debe su nombre a Julio César, que lo usaba para comunicarse
+         con sus generales.
+      </p>
+     
 
     </div>
-    <script src="index.js" type="module"></script>
     
-    
-    
-
+ <script src="index.js" type="module"></script>
+ 
   </body>
 </html>
