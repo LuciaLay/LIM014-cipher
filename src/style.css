@@ -5,6 +5,27 @@
     color: white;
     font-size: 30px;
   }
+
+#wrapper{
+  text-align: center;
+  align-items: center;
+}
+
+#code{
+
+float: left
+}
+
+#uncode{
+  
+  float: right;
+}
+
 #offset{
   width: 50px;
+}
+
+#info{
+  text-align: center;
+  clear: both;
 }
