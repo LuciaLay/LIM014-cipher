@@ -14,19 +14,19 @@
     <form id="code">
       <label>¿Que quieres cifrar?</label>
       <br>
-      <!--boton cifrar-->
       <textarea name="texto" placeholder="texto para cifrar" rows="10" cols="60"></textarea>
-      <br>
-      <button onclick="myFunction()">Cifrar</button>
       <br>
       <label>Desplazamiento  </label>
       <br>
-      <input type="number" id="offset" value="3" name="offset"/>
-      <!--resultado cifrado-->
-      <h3>Texto Cifrado</h3>
-      <div id="coded"></div>
+      <input type="number" id="offset" name="offset" value="3" min="1">
+      <br>
+      <!--boton cifrar, comprobar que funcione en el js segun su nombre-->
+      <input type='submit' value='encode'>
     </form>
-
+    <!--resultado cifrado, output, comprobar que funcione segun su nombre en el js-->
+    <h3>Texto Cifrado</h3>
+    <div id="coded"></div>
+    
     <form id="uncode">
       <p>¿Que quieres descifrar?</p>
       <!--boton descifrar-->
