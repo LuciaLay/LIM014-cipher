@@ -12,15 +12,19 @@
     </div>
  <div id="wrapper">
     <form id="code">
-      <p>¿Que quieres cifrar?</p>
+      <label>¿Que quieres cifrar?</label>
+      <br>
       <!--boton cifrar-->
       <textarea name="texto" placeholder="texto para cifrar" rows="10" cols="60"></textarea>
+      <br>
       <button onclick="myFunction()">Cifrar</button>
-      <p>Desplazamiento  </p>
+      <br>
+      <label>Desplazamiento  </label>
+      <br>
       <input type="number" id="offset" value="3" name="offset"/>
       <!--resultado cifrado-->
-      <p>Texto Cifrado</p>
-      <p id="coded"></p>
+      <h3>Texto Cifrado</h3>
+      <div id="coded"></div>
     </form>
 
     <form id="uncode">
