@@ -32,4 +32,8 @@ float: left
 #info{
   text-align: center;
   clear: both;
+  padding-top: 30px;
+  padding-right: 10%;
+  padding-bottom: 30%;
+  padding-left: 10%;
 }
