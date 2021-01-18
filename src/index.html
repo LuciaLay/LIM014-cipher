@@ -14,30 +14,33 @@
     <form id="code">
       <label>¿Que quieres cifrar?</label>
       <br>
-      <textarea name="texto" placeholder="texto para cifrar" rows="10" cols="60"></textarea>
+      <textarea name="texto" placeholder="texto para cifrar" rows="10" cols="40"></textarea>
       <br><br>
       <label>Desplazamiento  </label>
       <br>
       <input type="number" id="offset" name="offset" value="3" min="1">
       <br><br>
       <!--boton cifrar, comprobar que funcione en el js segun su nombre-->
-      <input type='submit' value='Codificar'> 
+      <input type="submit" value="Cifrar"> 
      <!--resultado cifrado, output, comprobar que funcione segun su nombre en el js-->
      <h3>Texto Cifrado</h3>
      <div id="coded"></div>
     </form>
-   
-    
+
     <form id="uncode">
-      <p>¿Que quieres descifrar?</p>
-      <!--boton descifrar-->
-      <textarea name="texto" placeholder="texto para descifrar" rows="10" cols="60"></textarea>
-      <button onclick="myFunction()">Descifrar</button>
-      <p>Desplazamiento  </p>
-      <input type="number" id="offset" value="3" name="offset"/>
-      <!--resultado descifrado-->
-      <p>Texto Descifrado</p>
-      <p id="uncoded"></p>
+      <label>¿Que quieres descifrar?</label>
+      <br>
+      <textarea name="texto" placeholder="texto para descifrar" rows="10" cols="40"></textarea>
+      <br><br>
+      <label>Desplazamiento  </label>
+      <br>
+      <input type="number" id="offset" name="offset" value="3" min="1">
+      <br><br>
+      <!--boton descifrar, comprobar que funcione en el js segun su nombre-->
+      <input type="submit" value="Descifrar"> 
+     <!--resultado descifrado, output, comprobar que funcione segun su nombre en el js-->
+     <h3>Texto Descifrado</h3>
+     <div id="uncoded"></div>
     </form>
   </div>
    
@@ -54,7 +57,7 @@
       <p>
         Por ejemplo, con un desplazamiento de 3, la A sería sustituida por la D (situada 3 lugares a la derecha de la 
         A), la B sería reemplazada por la E, etc. Este método debe su nombre a Julio César, que lo usaba para comunicarse
-         con sus generales.
+        con sus generales.
       </p>
      
 
