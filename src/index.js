@@ -10,10 +10,10 @@ const alphabet = [
     "Y","Z"
   ];
   
-const form = document.forms[0];
+const form = document.getElementById("code");
 const output = document.getElementById("coded");
 
-form.addEventListener ('submit',event => {
+form.addEventListener ("submit",event => {
     event.preventDefault();
     output.innerHTML = [... form.plaintext.value ].map(char => encrypt(char)).join('');
   }
