@@ -15,11 +15,11 @@ const output = document.getElementById("coded");
 
 form.addEventListener ("submit",event => {
     event.preventDefault();
-    output.innerHTML = [... form.plaintext.value ].map(char => encrypt(char)).join('');
+    output.innerHTML = [... form.plaintext.value ].map(char => encode(char)).join('');
   }
   );
 
-function encrypt(char) {
+function encode(char) {
     const shift = Number(form.shift.value);
     if (alphabet.includes(char.toUpperCase()))
     { 
