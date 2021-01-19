@@ -11,7 +11,7 @@ const alphabet = [
   ];
   
 const form = document.forms[0];
-const output = document.getElementById("output");
+const output = document.getElementById("coded");
 
 form.addEventListener ('submit',event => {
     event.preventDefault();
