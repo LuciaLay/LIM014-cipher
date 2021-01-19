@@ -19,4 +19,6 @@ form.addEventListener ('submit',event => {
   }
   );
 
-  
+function encrypt(char) {
+    const shift = Number(form.shift.value);
+    if (alphabet.includes(char.toUpperCase()))
