@@ -22,3 +22,11 @@ form.addEventListener ('submit',event => {
 function encrypt(char) {
     const shift = Number(form.shift.value);
     if (alphabet.includes(char.toUpperCase()))
+    { 
+        const position = alphabet.indexOf(char.toUpperCase());
+        const newPosition = (position + shift)%26;
+        return alphabet[newPosition] 
+      }
+      else { return char }
+      }
+    
