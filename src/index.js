@@ -12,3 +12,11 @@ const alphabet = [
   
 const form = document.forms[0];
 const output = document.getElementById("output");
+
+form.addEventListener ('submit',event => {
+    event.preventDefault();
+    output.innerHTML = [... form.plaintext.value ].map(char => encrypt(char)).join('');
+  }
+  );
+
+  
