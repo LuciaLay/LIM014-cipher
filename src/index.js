@@ -10,7 +10,7 @@ const alphabet = [
     "Y","Z"
   ];
   
-const form = document.getElementById("code");
+const form = document.forms[0];
 const output = document.getElementById("coded");
 
 form.addEventListener ("submit",event => {
