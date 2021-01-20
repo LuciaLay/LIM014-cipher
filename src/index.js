@@ -30,3 +30,35 @@ function encode(char) {
       else { return char }
       }
     
+
+
+
+      const alphabetB = [
+        'Z','Y','X','W','V','U',
+        'T','S','R','Q','P','O',
+        'N','M','L','K','J','I',
+        'H','G','F','E','D','C',
+        'B','A'
+      ];
+      const formB = document.forms[1];
+      const outputB = document.getElementById('uncoded');
+       
+      
+      
+      formB.addEventListener ('submit',event => {
+        event.preventDefault();
+        outputB.innerHTML = [... formB.plaintextB.value ].map(char => encrypt(char)).join('');
+      }
+      );
+      
+      function encrypt(char) {
+        const shiftB = Number(formB.shiftB.value);
+        if (alphabetB.includes(char.toUpperCase()))
+       { 
+          const positionB = alphabetB.indexOf(char.toUpperCase());
+          const newPositionB = (positionB + shiftB)%26;
+          return alphabetB[newPositionB] 
+        }
+        else { return char }
+        }
+      
