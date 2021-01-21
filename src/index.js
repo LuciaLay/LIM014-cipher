@@ -41,17 +41,17 @@ function encode(char) {
         'B','A'
       ];
       const formB = document.forms[1];
-      const outputB = document.getElementById('uncoded');
+      const outputB = document.getElementById('decoded');
        
       
       
       formB.addEventListener ('submit',event => {
         event.preventDefault();
-        outputB.innerHTML = [... formB.plaintextB.value ].map(char => encrypt(char)).join('');
+        outputB.innerHTML = [... formB.plaintextB.value ].map(char => decode(char)).join('');
       }
       );
       
-      function encrypt(char) {
+      function decode(char) {
         const shiftB = Number(formB.shiftB.value);
         if (alphabetB.includes(char.toUpperCase()))
        { 
