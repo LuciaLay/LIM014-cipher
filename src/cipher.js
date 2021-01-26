@@ -16,7 +16,7 @@ const alphabet = [
 
 const cipher = {
 
-  encode: function(char,offset) {
+  encode: function(offset, char) {
      
  
     const shift = Number(offset);
@@ -30,7 +30,7 @@ const cipher = {
       },
  
 
-decode: function(char,offset) {
+decode: function(offset, char) {
         const shiftB = Number(offset);
         if (alphabetB.includes(char.toUpperCase()))
        { 
