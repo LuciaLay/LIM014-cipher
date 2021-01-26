@@ -5,40 +5,40 @@
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body id="body">
     <div class="header">
       <p style="font-size:130%">Ceasar Cipher</p>
       <p style="font-size: 90%;" >Protege tus palabras</p>
     </div>
  <div id="wrapper">
-    <form id="code">
+    <form class="formAreas" id="code">
       <label>¿Que quieres cifrar?</label>
       <br>
-      <textarea name="plaintext" placeholder="texto para cifrar" rows="7" cols="30"></textarea>
+      <textarea id="text1" name="plaintext" placeholder="texto para cifrar" rows="7" cols="30"></textarea>
       <br><br>
       <label>Desplazamiento:  </label>
       <br>
-      <input type="number" id="offset1" name="shift" value="3" min="1">
+      <input type="number" id="offset1" name="offset" value="3" min="1">
       <br><br>
       <!--boton cifrar, comprobar que funcione en el js segun su nombre-->
-      <input type="submit" value="Cifrar"> 
+      <input type="submit" class="button"  value="Cifrar"> 
      <!--resultado cifrado, output, comprobar que funcione segun su nombre en el js-->
      <h3>Texto Cifrado</h3>
      <div id="coded"></div>
     </form>
     
 
-    <form id="uncode">
+    <form class="formAreas" id="uncode">
       <label>¿Que quieres descifrar?</label>
       <br>
-      <textarea name="plaintextB" placeholder="texto para descifrar" rows="7" cols="30"></textarea>
+      <textarea id="text2" name="plaintextB" placeholder="texto para descifrar" rows="7" cols="30"></textarea>
       <br><br>
       <label>Desplazamiento  </label>
       <br>
       <input type="number"  name="shiftB" value="3" min="1">
       <br><br>
       <!--boton descifrar, comprobar que funcione en el js segun su nombre-->
-      <input type="submit" value="Descifrar"> 
+      <input type="submit" class="button" value="Descifrar"  > 
      <!--resultado descifrado, output, comprobar que funcione segun su nombre en el js-->
      <h3>Texto Descifrado</h3>
      <div id="decoded"></div>
@@ -64,7 +64,8 @@
 
     </div>
     
- <script src="index.js" ></script>
+ <script type="module" src="index.js" ></script>
+ 
  
   </body>
 </html>
