@@ -8,8 +8,8 @@ const output = document.getElementById("coded");
 
   form.addEventListener ("submit",event => {
     event.preventDefault();
-    output.innerHTML = [... form.plaintext.value ].map(char => cipher.encode(char, form.offset.value)).join('');
-    console.log(cipher.encode("ABC"))
+    output.innerHTML = [... form.plaintext.value ].map(char => cipher.encode(form.offset.value, char)).join('');
+    
 }
 );
 
@@ -23,7 +23,7 @@ const output = document.getElementById("coded");
     
     formB.addEventListener ('submit',event => {
       event.preventDefault();
-      outputB.innerHTML = [... formB.plaintextB.value ].map(char => cipher.decode(char, form.offset.value)).join('');
+      outputB.innerHTML = [... formB.plaintextB.value ].map(char => cipher.decode(form.offset.value, char)).join('');
     }
     );
     
